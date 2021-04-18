@@ -11,6 +11,9 @@ A replacement for Arduino's LedControl library.
   - this feature is **DISABLED** by default,
   - add `#define USE_ADAFRUIT_GFX` in the header, on line 27, **or**
   - use `-DUSE_ADAFTUIT_GFX` (for advanced users).
+- dynamic font width (see DynamicFontWidth example)
+- auto scroll if text wider than display
+- additional fonts (work only with DynamicFontWidth example)
 
 ## Pin selection
 Each segment of the display requires 16 bits and can all be shifted in at once.  To make transfers faster we use hardware SPI instead of software.
@@ -33,3 +36,4 @@ Recommended pins for Arduino Uno:
 - Søren Thing Andersen - support for 7-seg displays with examples
 - Scott Baker - examples clean-up
 - James Gohl - module reversal concept and some code, another example
+- Mirza Masic - additional way of displaying text, new example, new fonts
